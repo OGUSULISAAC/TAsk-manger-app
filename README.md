@@ -127,7 +127,7 @@ Conduct thorough testing on various platforms and devices to ensure compatibilit
 
 
 
-PROJECT OVERVIEW.
+PROJECT OvERVIEW.
 
 The development of the Task Manager app will follow  an iterative and agile approach, with regular feedback from end users and enhance the app’s features.
 
