@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Task App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #000080;
+      color: #0f0e0e;
+      padding: 20px;
+      text-align: left;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 150px;
+      border: 5px;
+      background-color: #000080;
+    }
+    h2 {
+      color: yellow;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      justify-content: center;
+      height: 100vh;
+    }
+    .form {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 300px;
+      height: 50px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .back-button {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-top: 190px; /* Adjust the value as per your preference */
+    }
+  </style>
+  <script>
+    function displayMessage(formName) {
+        if (formName === 'Form 1') {
+        // Display additional information about volleyball as a pop-up message
+        alert("Volleyball is a team sport in which two teams of six players each are separated by a net. The objective of the game is to send the ball over the net and ground it on the opponent's court, while preventing the same effort by the opposing team. It is a fast-paced and exciting sport that requires teamwork, agility, and coordination.");
+      } else if (formName === 'Form 2') {
+        // Display pop-up message for the "Beginners information" form
+        alert(" Beginners information:\n\nVolleyball is a great sport for beginners to get started. Here are a few tips for beginners:\n\n1. Learn the basic rules of the game.\n2. Practice serving, passing, and hitting techniques.\n3. Focus on developing good footwork and positioning.\n4. Play with experienced players to improve your skills.\n5. Watch professional volleyball matches for inspiration.\n\nEnjoy your journey as a beginner in volleyball!");   
+      } else if (formName === 'Form 3') {
+        // Display pop-up message for the "Prep" form
+        alert("Preparation for volleyball:\n\nTo prepare for volleyball, consider the following:\n\n1. Engage in regular physical conditioning and exercises to improve strength, endurance, and agility.\n2. Practice fundamental volleyball skills such as serving, passing, setting, hitting, and blocking.\n3. Work on improving your vertical jump to enhance your spiking and blocking abilities.\n4. Familiarize yourself with the rules and regulations of the game.\n5. Play practice matches or join a local volleyball team to gain experience and refine your skills.\n\nStay dedicated and consistent in your training to excel in volleyball!");
+      } else if (formName === 'Form 4') {
+        // Display pop-up message for the "Injuries and Treatment" form
+        alert("Injuries and Treatment:\n\nVolleyball, like any other sport, carries the risk of injuries. Here are some common volleyball injuries and their treatment options:\n\n1. Ankle sprains: RICE method (Rest, Ice, Compression, Elevation), followed by physical therapy.\n2. Knee injuries: RICE method, knee braces, and rehabilitation exercises.\n3. Shoulder injuries: Rest, ice, anti-inflammatory medication, and physical therapy.\n4. Finger and hand injuries: Splinting, taping, and rehabilitation exercises.\n\nIf you experience any injury, it is important to seek medical attention and follow proper treatment protocols for a speedy recovery.");
+      } else {
+        // For other forms, display a generic message
+        alert("You clicked on " + formName + " form!");
+      }
+    
+
+    }
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="mikasaa.jpeg" alt="Logo" class="logo">
+    </a>
+      <h2>MY VOLLEYBALL TASK MANAGEMENT APPLICATION.</h2>
+    </header>
+    <div class="form-container">
+      <div class="form" onclick="displayMessage('Form 1')">About volleyball</div>
+      <div class="form" onclick="displayMessage('Form 2')">Beginners information</div>
+      <div class="form" onclick="displayMessage('Form 3')">Prep</div>
+      <div class="form" onclick="displayMessage('Form 4')">Injuries and Treatment</div>
+    </div>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <footer>
+      &copy; 2023 My volleyball Task manager app. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
